@@ -10,6 +10,8 @@
     $x = 25;
     $y = 30;
     $z = $y + $x;
+    $n = true;
+    $m = false;
     ?>
     <p>Esto es el resultado del formulario</p>
     ayukcchba bcaga
