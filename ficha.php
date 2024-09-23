@@ -6,6 +6,13 @@
     <title>Document</title>
 </head>
 <body>
+    <?php
+    $x = 25;
+    $y = 30;
+    $z = $y + $x;
+    ?>
     <p>Esto es el resultado del formulario</p>
+    ayukcchba bcaga
+    <?= $z ?>
 </body>
 </html>
