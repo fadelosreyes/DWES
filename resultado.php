@@ -9,13 +9,13 @@
     <p> El resultado es
     <?php
     if (isset($_GET['op1'])) {
-        $op1 = $_GET['op1'];
+        $op1 = trim($_GET['op1']);
         if ((empty($op1)) || !is_numeric($op1)) {
             echo "<h2> no es correcto 1</h2>";
         }
     }
     if (isset($_GET['op2'])) {
-        $op2 = $_GET['op2'];
+        $op2 = trim($_GET['op2']);
         if ((empty($op2)) || !is_numeric($op2)) {
             echo "<h2> no es correcto 2</h2>";
         }
