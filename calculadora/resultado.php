@@ -82,6 +82,8 @@
     <?=
     $res
     ?>
+    <br>
+    <a href="calculadora.html"><button>Volver</button></a>
     </p>
 </body>
 </html>
