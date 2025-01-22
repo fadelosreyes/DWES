@@ -1,0 +1,18 @@
+composer create-project laravel/laravel evaluacion
+composer require laravel/breeze --dev
+php artisan breeze:install
+ php artisan migrate
+npm install
+npm run dev
+php artisan make:model -cmrfs Ce
+
+-----BD
+sudo -u postgres createuser -P tienda
+sudo -u postgres createdb -O tienda tienda
+
+-----KEY
+php artisan key:generate
+
+----tailwind
+composer global require laravel/installer
+npm install -D tailwindcss postcss autoprefixer flowbite

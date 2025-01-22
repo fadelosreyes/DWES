@@ -12,6 +12,9 @@ class Ce extends Model
 
     protected $table = 'ccee';
 
+    protected $fillable = ['ce']; // Incluye 'nombre' como el campo del CE
+
+
     public function notas()
     {
         return $this->hasMany(Nota::class);
