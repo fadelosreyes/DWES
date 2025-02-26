@@ -43,7 +43,7 @@ class UpdateVideojuegos extends Component
     {
         $this->validate([
             'titulo' => 'required|string|max:255',
-            'anyo' => 'required|integer|min:1950|max:' . date('Y'),
+            'anyo' => 'required|integer|min:1950|max:',
             'desarrolladora_id' => 'required|exists:desarrolladoras,id',
             'distribuidora_id' => 'required|exists:distribuidoras,id',
         ]);

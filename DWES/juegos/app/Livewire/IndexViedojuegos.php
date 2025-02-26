@@ -16,7 +16,6 @@ class IndexViedojuegos extends Component
         //$query = Auth::user()
         //    ->videojuegos()
         //    ->join('desarrolladoras', 'desarrolladoras.id', '=', 'videojuegos.desarrolladora_id')
-        //    ->select('videojuegos.*', 'desarrolladoras.nombre as desarrolladora_nombre')
         //    ->orderBy('desarrolladoras.nombre', $this->sortDirection); // Ordenamos solo por desarrolladora
 
 
@@ -25,7 +24,6 @@ class IndexViedojuegos extends Component
         //    ->videojuegos()
         //    ->join('desarrolladoras', 'desarrolladoras.id', '=', 'videojuegos.desarrolladora_id')
         //    ->join('distribuidoras', 'distribuidoras.id', '=', 'desarrolladoras.distribuidora_id')
-        //    ->select('videojuegos.*', 'desarrolladoras.nombre as desarrolladora_nombre', 'distribuidoras.nombre as distribuidora_nombre')
         //    ->orderBy(
         //        $this->sortField === 'desarrolladora' ? 'desarrolladoras.nombre' :
         //        ($this->sortField === 'distribuidora' ? 'distribuidoras.nombre' :
@@ -38,7 +36,6 @@ class IndexViedojuegos extends Component
             ->videojuegos()
             ->join('desarrolladoras', 'desarrolladoras.id', '=', 'videojuegos.desarrolladora_id')
             ->join('distribuidoras', 'distribuidoras.id', '=', 'desarrolladoras.distribuidora_id')
-            ->select('videojuegos.*', 'desarrolladoras.nombre', 'distribuidoras.nombre')
             ->orderBy($this->sortField === 'desarrolladora' ? 'desarrolladoras.nombre' : 'distribuidoras.nombre', $this->sortDirection);
 
         // Ejecutamos la consulta
